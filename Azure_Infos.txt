@@ -1,0 +1,15 @@
+Banco geo-localizador no Azure
+
+geolocalizador-sql-srv.database.windows.net
+Administrador
+SenhaSql2019
+
+https://geolocalizador.z15.web.core.windows.net/
+// Url acesso
+https://geo-localizador.azurewebsites.net/
+//Url para deploy
+https://geo-localizador.scm.azurewebsites.net/
+
+
+// pagina static
+https://www.youtube.com/watch?v=ttmEOLKk3Cw
