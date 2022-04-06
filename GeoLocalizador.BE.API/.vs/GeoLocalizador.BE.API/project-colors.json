@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "07305b16-7de0-4591-96db-5c1568d8522b": {
+      "ProjectGuid": "07305b16-7de0-4591-96db-5c1568d8522b",
+      "DisplayName": "GeoLocalizador.BE",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

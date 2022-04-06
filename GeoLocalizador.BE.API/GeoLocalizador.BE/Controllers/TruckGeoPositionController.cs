@@ -80,6 +80,11 @@ namespace GeoLocalizador.BE.Controllers
                 return BadRequest(_result);
             }
         }
+        [HttpPost("set-rasp")]
+        public string SetRasp([FromBody] string value)
+        {
+            return value;
+        }
         [HttpPost]
         public ActionResult Set([FromBody] TruckGeoPosition value)
         {

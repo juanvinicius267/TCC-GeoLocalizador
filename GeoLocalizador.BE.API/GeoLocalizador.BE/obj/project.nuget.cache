@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IVPB/X5BHk6tamiR8tQtrubORYIfvAwLRF815OCBV8gUg8gyqVVPdP5WDZmVFD5ZSwy9VBIGCQGmX7QfLi5pqw==",
+  "dgSpecHash": "myc4Kg8z2JJ24BXlkilqslpwM9Aj5q7WvLqPDhU9WAo5DMQOnxm1o4m/ySYe8R2yG5IkwnQtU/5etIjXs60xYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ssbjvq\\Desktop\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj",
+  "projectFilePath": "C:\\Users\\ssbjvq\\Desktop\\Desktop (1)\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ssbjvq\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ssbjvq\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.11\\microsoft.aspnetcore.authentication.jwtbearer.5.0.11.nupkg.sha512",
