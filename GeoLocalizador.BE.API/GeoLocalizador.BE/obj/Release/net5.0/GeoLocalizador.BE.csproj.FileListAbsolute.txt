@@ -5,7 +5,6 @@ C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\bin\Release\
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\bin\Release\net5.0\GeoLocalizador.BE.runtimeconfig.json
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\bin\Release\net5.0\GeoLocalizador.BE.runtimeconfig.dev.json
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\bin\Release\net5.0\GeoLocalizador.BE.dll
-C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\bin\Release\net5.0\ref\GeoLocalizador.BE.dll
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\bin\Release\net5.0\GeoLocalizador.BE.pdb
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\bin\Release\net5.0\Humanizer.dll
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\bin\Release\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -51,7 +50,6 @@ C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\GeoLocalizador.BE.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\GeoLocalizador.BE.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\staticwebassets\GeoLocalizador.BE.StaticWebAssets.Manifest.cache
-C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\staticwebassets\GeoLocalizador.BE.StaticWebAssets.xml
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\scopedcss\bundle\GeoLocalizador.BE.styles.css
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\GeoLocalizador.BE.RazorTargetAssemblyInfo.cache
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\GeoLocalizador.BE.csproj.CopyComplete
@@ -59,3 +57,4 @@ C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\ref\GeoLocalizador.BE.dll
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\GeoLocalizador.BE.pdb
 C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\GeoLocalizador.BE.genruntimeconfig.cache
+C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\obj\Release\net5.0\refint\GeoLocalizador.BE.dll

@@ -7,5 +7,96 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4pN9l8nH/kmXt3uQGEaDowAAAAACAAAAAAADZgAAwAAAABAAAABOMZCLyQfzBzt8mNPv5ebNAAAAAASAAACgAAAAEAAAAHdoUXQnnJJ9EqUZyw2KRBaAAAAAsHyUdaKFWx/iHRDyhIFyXMI7joVUuuOViYoiWwz/6P8/tfATO6NPgetNLqi8ojcAa7qr/eL7OxNyIfg7Z/atSHpDkM82zi1AAhxwFHPtXqzEM3s7s2WdSASNo0HJAkKYSxnWGsOc2/6NN8idT09yYXJm5PXIbNwuompX90WPlYoUAAAAfgHolQ7pN28XCdrlB6RD/wwX0PY=</EncryptedPassword>
+    <_PublishTargetUrl>ftp://waws-prod-cq1-033.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
+    <History>False|2022-04-12T00:01:36.3020340Z;False|2022-04-11T21:00:09.3237669-03:00;</History>
   </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>11/01/2021 16:39:49</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>11/11/2021 12:28:59</publishTime>
+    </File>
+    <File Include="GeoLocalizador.BE.deps.json">
+      <publishTime>04/11/2022 21:01:08</publishTime>
+    </File>
+    <File Include="GeoLocalizador.BE.exe">
+      <publishTime>04/11/2022 21:01:03</publishTime>
+    </File>
+    <File Include="GeoLocalizador.BE.pdb">
+      <publishTime>04/11/2022 21:01:03</publishTime>
+    </File>
+    <File Include="GeoLocalizador.BE.runtimeconfig.json">
+      <publishTime>04/11/2022 20:58:55</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 20:24:48</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>09/22/2021 12:16:10</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <publishTime>08/10/2021 20:33:10</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>06/15/2021 16:12:46</publishTime>
+    </File>
+    <File Include="Microsoft.Identity.Client.dll">
+      <publishTime>05/18/2020 17:11:54</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>06/29/2020 22:04:58</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 20:25:12</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 17:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 17:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 17:35:06</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 17:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 17:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 17:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 17:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 17:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 20:24:48</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 05:53:44</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 05:53:46</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/15/2019 05:37:04</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>12/11/2020 23:40:42</publishTime>
+    </File>
+    <File Include="System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 05:37:36</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 05:37:42</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>04/11/2022 21:01:08</publishTime>
+    </File>
+  </ItemGroup>
 </Project>

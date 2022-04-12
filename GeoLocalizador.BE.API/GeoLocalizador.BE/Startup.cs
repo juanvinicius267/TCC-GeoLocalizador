@@ -95,13 +95,13 @@ namespace GeoLocalizador.BE
             }
             app.UseCors(MyAllowSpecificOrigins);
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseAuthentication();
+            //app.UseAuthentication();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ssbjvq\\Desktop\\Desktop (1)\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj": {}
+    "C:\\Users\\ssbjvq\\Desktop\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ssbjvq\\Desktop\\Desktop (1)\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj": {
+    "C:\\Users\\ssbjvq\\Desktop\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssbjvq\\Desktop\\Desktop (1)\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj",
+        "projectUniqueName": "C:\\Users\\ssbjvq\\Desktop\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj",
         "projectName": "GeoLocalizador.BE",
-        "projectPath": "C:\\Users\\ssbjvq\\Desktop\\Desktop (1)\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj",
+        "projectPath": "C:\\Users\\ssbjvq\\Desktop\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\GeoLocalizador.BE.csproj",
         "packagesPath": "C:\\Users\\ssbjvq\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssbjvq\\Desktop\\Desktop (1)\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\obj\\",
+        "outputPath": "C:\\Users\\ssbjvq\\Desktop\\Geo\\GeoLocalizador.BE.API\\GeoLocalizador.BE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\ssbjvq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.br.scania.com/ws/dataservices/packages.svc": {},
           "https://af.scania.com/artifactory/api/nuget/sla-nuget-local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
