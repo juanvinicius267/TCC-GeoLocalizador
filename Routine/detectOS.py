@@ -3,8 +3,6 @@ import platform
 import json
 
 def detect_OS():
-
-
     #Checando qual o sistema operacional
     system = str(platform.system())
     #Checando a versão
