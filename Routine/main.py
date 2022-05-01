@@ -1,6 +1,5 @@
+#! /usr/bin/python3
 #Importando bibliotecas
-#import pyserial
-
 import json
 from detectOS import detect_OS
 from serialCommunication import *
