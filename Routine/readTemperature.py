@@ -10,5 +10,8 @@ def readTemp():
     if result.is_valid():
         print("Temperature: %-3.1f C" % result.temperature)
         print("Humidity: %-3.1f %%" % result.humidity)
+        temp = str(result.temperature)
+        humid = str(result.humidity)
+        return temp, humid
     else:
         print("Error: %d" % result.error_code)

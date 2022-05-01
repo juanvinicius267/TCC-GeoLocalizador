@@ -134,7 +134,29 @@ def inputDataOnServer(lon, lat, date, alt, vel, course, fixMode, runStatus, gnss
         print("Erro na comunicação!")
     finally:
         print("Comunicação")
-    
+
+def sendTagDataToServer(id,text):
+    try:
+        url = "http://geo-localizador.azurewebsites.net/raspberry/set-rfidData?param="+id+","+text
+        print(url)
+        time.sleep(1)
+        # Abrindo a requisição HTTP
+        doCommunication('AT+HTTPINIT')
+        # Comando de parametrização da requsição HTTP
+        doCommunication('AT+HTTPPARA="CID",1')
+        # Comando de parametrização da URL da requsição HTTP
+        doCommunication('AT+HTTPPARA="URL","'+url+'"')    
+        # Comando de parametrização do metodo HTTP que será usado - GET = 0 e POST = 1
+        doCommunication('AT+HTTPACTION=0')
+        # Comando de leitura do retorno da requisição
+        #doCommunication('AT+HTTPREAD=0,5000')
+        
+        # Fechando a conexão
+        doCommunication('AT+HTTPTERM')
+    except:
+        print("Erro na comunicação!")
+    finally:
+        print("Fim da Comunicação")
 
 #endregion
 

@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 #Importando bibliotecas
 import json
+from typing import final
 from detectOS import detect_OS
 from serialCommunication import *
 from readTag import *
@@ -17,6 +18,7 @@ system = json.loads(systemInfo)
 
 #Seleciona a plataforma e realiza o setup indicado para aquela plataforma
 while (tryTimes < 1):
+    print('/--------Inicio da configuração dos modulos--------/')
     # Configura o modulo para ler posições geograficas
     statusGpsInitialSetup = selectPlataform(system['system'])
     # Convert o dado retornado para Json
@@ -33,7 +35,7 @@ while (tryTimes < 1):
     
     tryTimes = tryTimes + 1
 #endregion
-
+print('/--------Fim da configuração dos modulos--------/')
 # Antes de realizar a leitura dos dados, a rotina aguarda a leitura do cartão rfid de login do motorista
 while True:
     if (doLogin() == 1):
@@ -41,20 +43,23 @@ while True:
 
 #region Main Program
 while True:
-    print("/--------Inicio--------/")
-    readTemp()
-    # Realiza a leitura da localização
-    localization = getGeoLocation()
-    # Converte para Json o objeto retornado do metodo de leitura
-    localization = json.loads(localization)
-    # Imprime no terminal os dados retornados
-    print(localization)
-    # Envia os dados para o servidor via requisições HTTP/s
-    inputDataOnServer(localization["lat"], localization["lon"], localization["utcDateTime"], localization["altitude"], 
-    localization["velocidade"], localization["courseOverGround"] ,localization["fixMode"], localization["runStatus"],
-    localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"])  
-    print("/--------Fim--------/")  
-    time.sleep(4)
+    try:
+        print("/--------Inicio--------/")
+        temp, humid = readTemp()
+        # Realiza a leitura da localização
+        localization = getGeoLocation()
+        # Converte para Json o objeto retornado do metodo de leitura
+        localization = json.loads(localization)
+        # Imprime no terminal os dados retornados
+        print(localization)
+        # Envia os dados para o servidor via requisições HTTP/s
+        inputDataOnServer(localization["lat"], localization["lon"], localization["utcDateTime"], localization["altitude"], 
+        localization["velocidade"], localization["courseOverGround"] ,localization["fixMode"], localization["runStatus"],
+        localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"], temp, humid)  
+        print("/--------Fim--------/")  
+        time.sleep(4)
+    finally:
+        print("Erro na troca de dados")
 
 #endregion
 
