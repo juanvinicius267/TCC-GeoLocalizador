@@ -52,6 +52,7 @@ while True:
     inputDataOnServer(localization["lat"], localization["lon"], localization["utcDateTime"], localization["altitude"], 
     localization["velocidade"], localization["courseOverGround"] ,localization["fixMode"], localization["runStatus"],
     localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"])    
+    time.sleep(4)
 
 #endregion
 
