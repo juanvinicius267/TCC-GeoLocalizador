@@ -41,6 +41,7 @@ while True:
 
 #region Main Program
 while True:
+    print("/--------Inicio--------/")
     readTemp()
     # Realiza a leitura da localização
     localization = getGeoLocation()
@@ -51,7 +52,8 @@ while True:
     # Envia os dados para o servidor via requisições HTTP/s
     inputDataOnServer(localization["lat"], localization["lon"], localization["utcDateTime"], localization["altitude"], 
     localization["velocidade"], localization["courseOverGround"] ,localization["fixMode"], localization["runStatus"],
-    localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"])    
+    localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"])  
+    print("/--------Fim--------/")  
     time.sleep(4)
 
 #endregion
