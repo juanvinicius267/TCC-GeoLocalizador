@@ -3,7 +3,7 @@ import dht11
 
 
 # read data using pin 14
-instance = dht11.DHT11(pin = 4)
+instance = dht11.DHT11(pin = 7)
 def readTemp():
     result = instance.read()
 
