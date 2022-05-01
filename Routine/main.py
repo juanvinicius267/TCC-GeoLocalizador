@@ -49,7 +49,7 @@ while True:
     # Imprime no terminal os dados retornados
     print(localization)
     # Envia os dados para o servidor via requisições HTTP/s
-    getDataOnServer(localization["lat"], localization["lon"], localization["utcDateTime"], localization["altitude"], 
+    inputDataOnServer(localization["lat"], localization["lon"], localization["utcDateTime"], localization["altitude"], 
     localization["velocidade"], localization["courseOverGround"] ,localization["fixMode"], localization["runStatus"],
     localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"])    
 

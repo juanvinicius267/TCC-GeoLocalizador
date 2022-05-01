@@ -4,7 +4,7 @@ def geoLocationFormatter(runStatus, fixStatus, utcDateTime, latitude, longitude,
 altitude, velocidade, courseOverGround, fixMode, hdop, pdop, vdop, gnssSatelittiesInView, gnssSatellitiesUsed,
 glonasSatelittiesUsed, cn0max, hpa, vpa):
     return json.dumps({
-        "runStatus": runStatus,
+        "runStatus": 1,#runStatus,
         "fixStatus": fixStatus,
         "utcDateTime": utcDateTime,
         "lat": latitude,
