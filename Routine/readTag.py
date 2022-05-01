@@ -1,47 +1,22 @@
-import time
 import RPi.GPIO as GPIO
-import libs.MFRC522 as MFRC522
- 
-# UID dos cartões que possuem acesso liberado.
-CARTOES_LIBERADOS = {
-    '4F:FD:2F:0:9D': 'Motorista',
-    '3C:2F:4F:0:2D': 'Teste',
-}
+from mfrc522 import SimpleMFRC522
+import time
+
+leitorRfid = SimpleMFRC522()
 
 def doLogin():
+    print("Aproxime o cartao da leitora rfid...")
     try:
-        # Inicia o módulo RC522.
-        LeitorRFID = MFRC522.MFRC522()
-    
-        print('Aproxime seu cartão RFID')
-    
-        while True:
-            # Verifica se existe uma tag próxima do módulo.
-            status, tag_type = LeitorRFID.MFRC522_Request(LeitorRFID.PICC_REQIDL)
-    
-            if status == LeitorRFID.MI_OK:
-                print('Cartão detectado!')
-    
-                # Efetua leitura do UID do cartão.
-                status, uid = LeitorRFID.MFRC522_Anticoll()
-    
-                if status == LeitorRFID.MI_OK:
-                    uid = ':'.join(['%X' % x for x in uid])
-                    print('UID do cartão: %s' % uid)
-    
-                    # Se o cartão está liberado exibe mensagem de boas vindas.
-                    if uid in CARTOES_LIBERADOS:
-                        print('Acesso Liberado!')
-                        print('Olá %s.' % CARTOES_LIBERADOS[uid])
-                        break
-                    else:
-                        print('Acesso Negado!')
-    
-                    print('nAproxime seu cartão RFID')
-    
-            time.sleep(.25)
-    except KeyboardInterrupt:
-        # Se o usuário precionar Ctrl + C
-        # encerra o programa.
-        GPIO.cleanup()
-        print('nPrograma encerrado.')
+            id, text = leitorRfid.read()
+            print("ID do cartao: ", id)
+            if id == 291913269973:
+                print("Tag RFID valida!")                
+                time.sleep(2)
+                return 1
+            else:
+                print("Tag RFID nao permitida!")
+                time.sleep(2)
+                return 0
+            
+    finally:
+            return 0
