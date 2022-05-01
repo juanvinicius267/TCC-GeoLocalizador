@@ -4,7 +4,7 @@ import libs.MFRC522 as MFRC522
  
 # UID dos cartões que possuem acesso liberado.
 CARTOES_LIBERADOS = {
-    '4F:FD:2F:0:9D': 'FilipeFlop',
+    '4F:FD:2F:0:9D': 'Motorista',
     '3C:2F:4F:0:2D': 'Teste',
 }
 

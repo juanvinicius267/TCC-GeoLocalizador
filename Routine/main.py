@@ -35,7 +35,8 @@ while (tryTimes < 1):
 #endregion
 
 # Antes de realizar a leitura dos dados, a rotina aguarda a leitura do cartão rfid de login do motorista
-doLogin()
+while True:
+    doLogin()
 
 #region Main Program
 while True:

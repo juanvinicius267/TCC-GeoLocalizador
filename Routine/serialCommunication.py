@@ -6,8 +6,8 @@ from dataFormatterStand import *
 
 #Variaveis comuns ao Script
 # Parametriza a como será a leitura na porta serial
-serialPort = serial.Serial('COM4',baudrate=115200, timeout=1) # Windows
-#serialPort = serial.Serial('/dev/ttyUSB0',baudrate=115200, timeout=1) # Linux
+#serialPort = serial.Serial('COM4',baudrate=115200, timeout=1) # Windows
+serialPort = serial.Serial('/dev/ttyUSB0',baudrate=115200, timeout=1) # Linux
 
 #Função que seleciona qual o setup para o sistema operacional que esta rodando
 def selectPlataform(operationalSystem):
