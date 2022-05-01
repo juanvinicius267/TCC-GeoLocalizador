@@ -58,8 +58,11 @@ while True:
         localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"], temp, humid)  
         print("/--------Fim--------/")  
         time.sleep(4)
+    except:
+        pass
+        print("ignored the exception")
     finally:
-        print("Erro na troca de dados")
+        print("/--------Fim--------/")
 
 #endregion
 
