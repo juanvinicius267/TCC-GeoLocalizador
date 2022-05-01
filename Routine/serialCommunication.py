@@ -117,6 +117,8 @@ def inputDataOnServer(lon, lat, date, alt, vel, course, fixMode, runStatus, gnss
         url = "http://geo-localizador.azurewebsites.net/raspberry/set-data-2?param="+lon+","+lat+","+date+","+alt+","+vel+","+course+","+fixMode+","+runStatus+","+gnssSat+","+glonasSat+","+temp+","+humid
         print(url)
         time.sleep(1)
+        #Wait untial bearer is activated
+        doCommunication('WAIT=6')
         # Abrindo a requisição HTTP
         doCommunication('AT+HTTPINIT')
         # Comando de parametrização da requsição HTTP

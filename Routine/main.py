@@ -59,7 +59,7 @@ while True:
         localization["velocidade"], localization["courseOverGround"] ,localization["fixMode"], localization["runStatus"],
         localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"], tempHumid['temp'], tempHumid['humid'])  
         print("/--------Fim--------/")  
-        time.sleep(4)
+        time.sleep(10)
     except:
         pass
         print("ignored the exception")
