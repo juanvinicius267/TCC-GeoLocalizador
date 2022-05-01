@@ -45,7 +45,9 @@ while True:
 while True:
     try:
         print("/--------Inicio--------/")
-        temp, humid = readTemp()
+
+        tempHumid = readTemp()
+        tempHumid = json.loads(tempHumid)
         # Realiza a leitura da localização
         localization = getGeoLocation()
         # Converte para Json o objeto retornado do metodo de leitura
@@ -55,7 +57,7 @@ while True:
         # Envia os dados para o servidor via requisições HTTP/s
         inputDataOnServer(localization["lat"], localization["lon"], localization["utcDateTime"], localization["altitude"], 
         localization["velocidade"], localization["courseOverGround"] ,localization["fixMode"], localization["runStatus"],
-        localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"], temp, humid)  
+        localization["gnssSatellitiesUsed"], localization["glonasSatelittiesUsed"], tempHumid['temp'], tempHumid['humid'])  
         print("/--------Fim--------/")  
         time.sleep(4)
     except:
