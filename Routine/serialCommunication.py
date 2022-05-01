@@ -112,9 +112,9 @@ def setDataOnServer():
     # Fechando a conexão
     doCommunication('AT+HTTPTERM')
 
-def inputDataOnServer(lon, lat, date, alt, vel, course, fixMode, runStatus, gnssSat, glonasSat):
+def inputDataOnServer(lon, lat, date, alt, vel, course, fixMode, runStatus, gnssSat, glonasSat,temp, humid):
     try:
-        url = "http://geo-localizador.azurewebsites.net/raspberry/set-data-2?param="+lon+","+lat+","+date+","+alt+","+vel+","+course+","+fixMode+","+runStatus+","+gnssSat+","+glonasSat
+        url = "http://geo-localizador.azurewebsites.net/raspberry/set-data-2?param="+lon+","+lat+","+date+","+alt+","+vel+","+course+","+fixMode+","+runStatus+","+gnssSat+","+glonasSat+","+temp+","+humid
         print(url)
         time.sleep(1)
         # Abrindo a requisição HTTP
