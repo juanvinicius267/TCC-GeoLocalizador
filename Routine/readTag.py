@@ -4,6 +4,7 @@ import time
 
 leitorRfid = SimpleMFRC522()
 
+result = 2
 def doLogin():
     print("Aproxime o cartao da leitora rfid...")
     try:
@@ -12,11 +13,11 @@ def doLogin():
             if id == 291913269973:
                 print("Tag RFID valida!")                
                 time.sleep(2)
-                return 1
+                result = 1
             else:
                 print("Tag RFID nao permitida!")
                 time.sleep(2)
-                return 0
+                result = 0
             
     finally:
-            return 0
+            return result

@@ -5,6 +5,7 @@ import json
 from detectOS import detect_OS
 from serialCommunication import *
 from readTag import *
+from readTemperature import *
 #Campo das declarações de variaveis
 tryTimes = 0
 
@@ -41,6 +42,7 @@ while True:
 
 #region Main Program
 while True:
+    readTemp()
     # Realiza a leitura da localização
     localization = getGeoLocation()
     # Converte para Json o objeto retornado do metodo de leitura
