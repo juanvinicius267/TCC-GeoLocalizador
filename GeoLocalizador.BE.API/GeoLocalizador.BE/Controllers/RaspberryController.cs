@@ -59,13 +59,13 @@ namespace GeoLocalizador.BE.Controllers
             try
             {
                 string[] dadosDoCadastro = param.ToString().Split(',');
-                RfidLog _logs = new RfidLog
+                RfidLog _log = new RfidLog
                 {
                     IdNumber = dadosDoCadastro[0],
                     Text = dadosDoCadastro[1],
                     RecordDateTime = _time.ConvertUtcToBrasilia(DateTime.UtcNow)
                 };
-                _context.RfidLogs.Add(_logs);
+                _context.RfidLogs.Add(_log);
                 _context.SaveChanges();
                 return Ok();
             }
