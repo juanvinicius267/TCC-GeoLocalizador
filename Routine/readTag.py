@@ -12,11 +12,11 @@ def doLogin():
             print("ID do cartao: ", id)
             if id == 345847071554:
                 print("Tag RFID valida!")                
-                sendTagDataToServer(str(id),"null")
+                sendTagDataToServer(str(id),"Tag RFID valida!")
                 result = 1
             else:
-                print("Tag RFID nao permitida!")
-                sendTagDataToServer(str(id),"null")
+                print("Tag RFID não permitida!")
+                sendTagDataToServer(str(id),"Tag RFID não permitida!")
                 time.sleep(2)
                 result = 0
             
