@@ -29,7 +29,7 @@ namespace GeoLocalizador.BE.Dao
                          travel.Status != "CANCELADA" &&
                          travel.IdTruck == truck.IdTruck &&
                          travel.IdOrigin == or.IdPosition &&
-                         travel.IdOrigin == des.IdPosition 
+                         travel.IdDestination == des.IdPosition 
                          select new TruckInformationResponse
                          {
                              IdTravel = travel.IdTravel,

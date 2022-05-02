@@ -28,7 +28,7 @@ namespace GeoLocalizador.BE.Controllers
                 string[] dadosDoCadastro = param.ToString().Split(',');
                 TruckGeoPosition _geo = new TruckGeoPosition
                 {
-                    IdTruck = 2,
+                    IdTruck = 1004,
                     Longitude = dadosDoCadastro[1],
                     Latitude = dadosDoCadastro[0],
                     Course = dadosDoCadastro[5],

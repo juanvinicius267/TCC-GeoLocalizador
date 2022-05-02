@@ -8,26 +8,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4pN9l8nH/kmXt3uQGEaDowAAAAACAAAAAAADZgAAwAAAABAAAABOMZCLyQfzBzt8mNPv5ebNAAAAAASAAACgAAAAEAAAAHdoUXQnnJJ9EqUZyw2KRBaAAAAAsHyUdaKFWx/iHRDyhIFyXMI7joVUuuOViYoiWwz/6P8/tfATO6NPgetNLqi8ojcAa7qr/eL7OxNyIfg7Z/atSHpDkM82zi1AAhxwFHPtXqzEM3s7s2WdSASNo0HJAkKYSxnWGsOc2/6NN8idT09yYXJm5PXIbNwuompX90WPlYoUAAAAfgHolQ7pN28XCdrlB6RD/wwX0PY=</EncryptedPassword>
     <_PublishTargetUrl>ftp://waws-prod-cq1-033.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
-    <History>True|2022-05-02T00:26:50.0785661Z;False|2022-05-01T21:26:04.6026308-03:00;True|2022-05-01T21:24:30.6529433-03:00;False|2022-05-01T21:22:58.0309025-03:00;False|2022-05-01T21:22:20.0753586-03:00;False|2022-05-01T21:22:08.4480993-03:00;False|2022-04-11T21:01:36.3020340-03:00;False|2022-04-11T21:00:09.3237669-03:00;</History>
+    <History>True|2022-05-02T18:25:25.4003849Z;False|2022-05-02T15:23:16.3389525-03:00;False|2022-05-02T15:22:21.1233133-03:00;True|2022-05-01T23:15:55.7778417-03:00;False|2022-05-01T23:15:16.8668091-03:00;True|2022-05-01T21:26:50.0785661-03:00;False|2022-05-01T21:26:04.6026308-03:00;True|2022-05-01T21:24:30.6529433-03:00;False|2022-05-01T21:22:58.0309025-03:00;False|2022-05-01T21:22:20.0753586-03:00;False|2022-05-01T21:22:08.4480993-03:00;False|2022-04-11T21:01:36.3020340-03:00;False|2022-04-11T21:00:09.3237669-03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="appsettings.Development.json">
-      <publishTime>01/11/2021 16:39:49</publishTime>
+      <publishTime>11/01/2021 16:39:49</publishTime>
     </File>
     <File Include="appsettings.json">
       <publishTime>11/11/2021 12:28:59</publishTime>
     </File>
     <File Include="GeoLocalizador.BE.deps.json">
-      <publishTime>05/01/2022 21:26:23</publishTime>
+      <publishTime>05/02/2022 15:24:58</publishTime>
     </File>
     <File Include="GeoLocalizador.BE.dll">
-      <publishTime>05/01/2022 21:26:20</publishTime>
+      <publishTime>05/02/2022 15:24:58</publishTime>
     </File>
     <File Include="GeoLocalizador.BE.exe">
-      <publishTime>05/01/2022 21:26:20</publishTime>
+      <publishTime>05/02/2022 15:24:58</publishTime>
     </File>
     <File Include="GeoLocalizador.BE.pdb">
-      <publishTime>05/01/2022 21:26:20</publishTime>
+      <publishTime>05/02/2022 15:24:58</publishTime>
     </File>
     <File Include="GeoLocalizador.BE.runtimeconfig.json">
       <publishTime>04/11/2022 20:58:55</publishTime>
@@ -45,10 +45,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/22/2021 12:16:20</publishTime>
     </File>
     <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
-      <publishTime>08/10/2021 20:33:06</publishTime>
+      <publishTime>10/08/2021 20:33:06</publishTime>
     </File>
     <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
-      <publishTime>10/08/2021 20:33:10</publishTime>
+      <publishTime>08/10/2021 20:33:10</publishTime>
     </File>
     <File Include="Microsoft.Extensions.DependencyInjection.dll">
       <publishTime>06/15/2021 16:12:46</publishTime>
@@ -123,7 +123,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/15/2019 05:37:04</publishTime>
     </File>
     <File Include="System.Diagnostics.DiagnosticSource.dll">
-      <publishTime>11/12/2020 23:40:42</publishTime>
+      <publishTime>12/11/2020 23:40:42</publishTime>
     </File>
     <File Include="System.IdentityModel.Tokens.Jwt.dll">
       <publishTime>06/29/2020 22:03:46</publishTime>
@@ -135,7 +135,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/15/2019 05:37:42</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/01/2022 21:26:24</publishTime>
+      <publishTime>05/02/2022 15:24:58</publishTime>
     </File>
   </ItemGroup>
 </Project>
