@@ -4,7 +4,7 @@
     <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
     <ActiveDebugProfile>GeoLocalizador.BE</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\Properties\PublishProfiles\geo-localizador - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\ssbjvq\Desktop\Geo\GeoLocalizador.BE.API\GeoLocalizador.BE\Properties\PublishProfiles\geo-localizador - FTP.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

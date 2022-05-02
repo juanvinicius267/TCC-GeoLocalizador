@@ -23,6 +23,7 @@ namespace GeoLocalizador.BE.Infra
         public DbSet<TruckInfo> TruckInfos { get; set; }
         public DbSet<TruckTravel> TruckTravels { get; set; }
         public DbSet<VesselTravel> VesselTravels { get; set; }
+        public DbSet<RfidLog> RfidLogs { get; set; }
 
     }
 }

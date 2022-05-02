@@ -66,28 +66,28 @@ namespace GeoLocalizador.BE.Dao
             _context.TruckGeoPositions.Add(_geo);
             return (_context.SaveChanges() > 0);
         }
-        public bool Update(int id, TruckGeoPosition _geo)
-        {
-            TruckGeoPosition geo = _context.TruckGeoPositions.Find(id);
-            if (geo != null)
-            {
-                _geo.IdTruck = geo.IdTruck;
-                _geo.Longitude = geo.Longitude;
-                _geo.Latitude = geo.Latitude;
-                _geo.Longitude = geo.Longitude;
-                _geo.Speed = geo.Speed;
-                _geo.SignalQuality = geo.SignalQuality;
-                _geo.Satellites = geo.Satellites;
-                _geo.Altitude = geo.Altitude;
-                _geo.AltitudeUnits = geo.AltitudeUnits;
-                _geo.GeoSep = geo.GeoSep;
-                _geo.GeoSepUnits = geo.GeoSepUnits;
-                _geo.AgeGpsData = geo.AgeGpsData;
-                _geo.RefStationId = geo.RefStationId;
-                _geo.LogDate = DateTime.Now;                
-            }
-            return (_context.SaveChanges() > 0);
-        }
+        //public bool Update(int id, TruckGeoPosition _geo)
+        //{
+        //    TruckGeoPosition geo = _context.TruckGeoPositions.Find(id);
+        //    if (geo != null)
+        //    {
+        //        _geo.IdTruck = geo.IdTruck;
+        //        _geo.Longitude = geo.Longitude;
+        //        _geo.Latitude = geo.Latitude;
+        //        _geo.Longitude = geo.Longitude;
+        //        _geo.Speed = geo.Speed;
+        //        _geo.SignalQuality = geo.SignalQuality;
+        //        _geo.Satellites = geo.Satellites;
+        //        _geo.Altitude = geo.Altitude;
+        //        _geo.AltitudeUnits = geo.AltitudeUnits;
+        //        _geo.GeoSep = geo.GeoSep;
+        //        _geo.GeoSepUnits = geo.GeoSepUnits;
+        //        _geo.AgeGpsData = geo.AgeGpsData;
+        //        _geo.RefStationId = geo.RefStationId;
+        //        _geo.LogDate = DateTime.Now;                
+        //    }
+        //    return (_context.SaveChanges() > 0);
+        //}
         public bool Delete(int id)
         {
             _context.TruckGeoPositions.Remove(_context.TruckGeoPositions.Find(id));

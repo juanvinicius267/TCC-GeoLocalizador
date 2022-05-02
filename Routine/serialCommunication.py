@@ -114,19 +114,24 @@ def setDataOnServer():
 
 def inputDataOnServer(lon, lat, date, alt, vel, course, fixMode, runStatus, gnssSat, glonasSat,temp, humid):
     try:
-        url = "http://geo-localizador.azurewebsites.net/raspberry/set-data-2?param="+lon+","+lat+","+date+","+alt+","+vel+","+course+","+fixMode+","+runStatus+","+gnssSat+","+glonasSat+","+temp+","+humid
+        url = "http://geo-localizador.azurewebsites.net/raspberry/geo-location?param="+lon+","+lat+","+date+","+alt+","+vel+","+course+","+fixMode+","+runStatus+","+gnssSat+","+glonasSat+","+temp+","+humid
         print(url)
         time.sleep(1)
         #Wait untial bearer is activated
         doCommunication('WAIT=6')
+        time.sleep(.2)
         # Abrindo a requisição HTTP
         doCommunication('AT+HTTPINIT')
+        time.sleep(.2)
         # Comando de parametrização da requsição HTTP
         doCommunication('AT+HTTPPARA="CID",1')
+        time.sleep(.2)
         # Comando de parametrização da URL da requsição HTTP
-        doCommunication('AT+HTTPPARA="URL","'+url+'"')    
+        doCommunication('AT+HTTPPARA="URL","'+url+'"')   
+        time.sleep(.2) 
         # Comando de parametrização do metodo HTTP que será usado - GET = 0 e POST = 1
         doCommunication('AT+HTTPACTION=0')
+        time.sleep(.2)
         # Comando de leitura do retorno da requisição
         #doCommunication('AT+HTTPREAD=0,5000')
         
@@ -139,22 +144,26 @@ def inputDataOnServer(lon, lat, date, alt, vel, course, fixMode, runStatus, gnss
 
 def sendTagDataToServer(id,text):
     try:
-        url = "http://geo-localizador.azurewebsites.net/raspberry/set-rfidData?param="+id+","+text
-        print(url)
-        time.sleep(1)
+        url = "http://geo-localizador.azurewebsites.net/raspberry/rfid-logs?param="+id+","+text
+        doCommunication('WAIT=6')
+        time.sleep(.2)
         # Abrindo a requisição HTTP
         doCommunication('AT+HTTPINIT')
+        time.sleep(.2)
         # Comando de parametrização da requsição HTTP
         doCommunication('AT+HTTPPARA="CID",1')
+        time.sleep(.2)
         # Comando de parametrização da URL da requsição HTTP
         doCommunication('AT+HTTPPARA="URL","'+url+'"')    
+        time.sleep(.2)
         # Comando de parametrização do metodo HTTP que será usado - GET = 0 e POST = 1
         doCommunication('AT+HTTPACTION=0')
+        time.sleep(.2)
         # Comando de leitura do retorno da requisição
-        #doCommunication('AT+HTTPREAD=0,5000')
-        
+        #doCommunication('AT+HTTPREAD=0,5000')        
         # Fechando a conexão
         doCommunication('AT+HTTPTERM')
+        time.sleep(.2)
     except:
         print("Erro na comunicação!")
     finally:

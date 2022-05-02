@@ -33,7 +33,7 @@ namespace GeoLocalizador.BE.Services
         }
         public Result<bool> Update(int id, TruckGeoPosition truckGeoPosition)
         {
-            return new Result<bool>(_context.Update(id, truckGeoPosition));
+            return new Result<bool>(/*_context.Update(id, truckGeoPosition)*/);
         }
         public Result<bool> Delete(int id)
         {
