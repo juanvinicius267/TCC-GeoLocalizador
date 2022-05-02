@@ -145,6 +145,9 @@ def inputDataOnServer(lon, lat, date, alt, vel, course, fixMode, runStatus, gnss
 def sendTagDataToServer(id,text):
     try:
         url = "http://geo-localizador.azurewebsites.net/raspberry/rfid-logs?param="+id+","+text
+        print(url)
+        time.sleep(1)
+        #Wait untial bearer is activated
         doCommunication('WAIT=6')
         time.sleep(.2)
         # Abrindo a requisição HTTP
@@ -154,16 +157,16 @@ def sendTagDataToServer(id,text):
         doCommunication('AT+HTTPPARA="CID",1')
         time.sleep(.2)
         # Comando de parametrização da URL da requsição HTTP
-        doCommunication('AT+HTTPPARA="URL","'+url+'"')    
-        time.sleep(.2)
+        doCommunication('AT+HTTPPARA="URL","'+url+'"')   
+        time.sleep(.2) 
         # Comando de parametrização do metodo HTTP que será usado - GET = 0 e POST = 1
         doCommunication('AT+HTTPACTION=0')
         time.sleep(.2)
         # Comando de leitura do retorno da requisição
-        #doCommunication('AT+HTTPREAD=0,5000')        
+        #doCommunication('AT+HTTPREAD=0,5000')
+        
         # Fechando a conexão
         doCommunication('AT+HTTPTERM')
-        time.sleep(.2)
     except:
         print("Erro na comunicação!")
     finally:
