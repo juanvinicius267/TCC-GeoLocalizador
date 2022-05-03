@@ -43,19 +43,23 @@ namespace GeoLocalizador.BE
                 //Dao AddTransient
                 services.AddTransient<GeoPositionDao>();
                 services.AddTransient<HarborDao>();
+                services.AddTransient<TruckTravelDao>();
                 services.AddTransient<TruckGeoPositionDao>();
                 services.AddTransient<TruckInfoDao>();
                 services.AddTransient<UserDao>();
                 services.AddTransient<VesselGeoPositionDao>();
                 services.AddTransient<VesselInfoDao>();
-                //Services AddTransient
-                services.AddTransient<GeoPositionServices>();
+                services.AddTransient<VesselTravelDao>();
+            //Services AddTransient
+            services.AddTransient<GeoPositionServices>();
                 services.AddTransient<HarborServices>();
+                services.AddTransient<TruckTravelServices>();
                 services.AddTransient<TruckGeoPositionServices>();
                 services.AddTransient<TruckInfoServices>();
                 services.AddTransient<UserServices>();
                 services.AddTransient<VesselGeoPositionServices>();
                 services.AddTransient<VesselInfoServices>();
+                services.AddTransient<VesselTravelServices>();
             #endregion
 
 

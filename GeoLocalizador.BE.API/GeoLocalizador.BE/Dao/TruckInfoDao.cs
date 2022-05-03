@@ -29,10 +29,10 @@ namespace GeoLocalizador.BE.Dao
             _context.TruckInfos.Add(_truck);
             return (_context.SaveChanges() > 0);
         }
-        public bool Update(int id, TruckInfo _truck)
+        public bool Update(int id, TruckInfo truck)
         {
-            TruckInfo truck = _context.TruckInfos.Find(id);
-            if (truck != null)
+            TruckInfo _truck = _context.TruckInfos.FirstOrDefault(truck => truck.IdTruck == id);
+            if (_truck != null)
             {
                 _truck.LicensePlate = truck.LicensePlate;
                 _truck.Carrier = truck.Carrier;

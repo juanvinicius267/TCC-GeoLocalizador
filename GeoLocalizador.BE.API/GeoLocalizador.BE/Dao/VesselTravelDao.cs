@@ -29,10 +29,10 @@ namespace GeoLocalizador.BE.Dao
             _context.VesselTravels.Add(_vessel);
             return (_context.SaveChanges() > 0);
         }
-        public bool Update(int id, VesselTravel _vessel)
+        public bool Update(int id, VesselTravel vessel)
         {
-            VesselTravel vessel = _context.VesselTravels.Find(id);
-            if (vessel != null)
+            VesselTravel _vessel = _context.VesselTravels.Find(id);
+            if (_vessel != null)
             {
                 _vessel.IdOrigin = vessel.IdOrigin;
                 _vessel.IdDestination = vessel.IdDestination;

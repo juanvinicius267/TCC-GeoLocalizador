@@ -28,10 +28,10 @@ namespace GeoLocalizador.BE.Dao
             _context.GeoPositions.Add(_geo);
             return (_context.SaveChanges() > 0);
         }
-        public bool Update(int id, GeoPosition _geo)
+        public bool Update(int id, GeoPosition geo)
         {
-            GeoPosition geo = _context.GeoPositions.Find(id);
-            if(geo != null)
+            GeoPosition _geo = _context.GeoPositions.FirstOrDefault(ge=> ge.IdPosition == id);
+            if(_geo != null)
             {
                 _geo.Latitude = geo.Latitude;
                 _geo.Longitude = geo.Longitude;

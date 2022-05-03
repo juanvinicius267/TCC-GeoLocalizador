@@ -29,18 +29,19 @@ namespace GeoLocalizador.BE.Dao
             _context.TruckTravels.Add(_truck);
             return (_context.SaveChanges() > 0);
         }
-        public bool Update(int id, TruckTravel _truck)
+        public bool Update(int id, TruckTravel truck)
         {
-            TruckTravel truck = _context.TruckTravels.Find(id);
-            if (truck != null)
+            TruckTravel _truck = _context.TruckTravels.FirstOrDefault(travel => travel.IdTravel == id);
+            if (_truck != null)
             {
                 _truck.IdOrigin = truck.IdOrigin;
                 _truck.IdDestination = truck.IdDestination;
                 _truck.IdTruck = truck.IdTruck;
                 _truck.Cargo = truck.Cargo;
                 _truck.Status = truck.Status;
-            }
-            return (_context.SaveChanges() > 0);
+                return _context.SaveChanges() > 0;
+            }            
+            return false;
         }
         public bool Delete(int id)
         {

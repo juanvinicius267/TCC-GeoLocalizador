@@ -50,7 +50,7 @@ namespace GeoLocalizador.BE.Dao
         }
         public bool UpdatePassword(int id, User _user)
         {
-            User _result = _context.Users.Find(id);
+            User _result = _context.Users.FirstOrDefault(user => user.Id == id); ;
             if (_result != null)
             {
                 _result.Password = _user.Password;
